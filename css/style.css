@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+
+@font-face {
+	font-family: "playfair";
+	src: url("_fonts/PlayfairDisplay-Regular.otf");
+}
+
+body{
+    background-image: url(../image/fundo1.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+    margin: auto;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: yellowgreen;
+}
+
+
+/* Menu */
+#header{
+	display: block;
+    grid-area: header;
+	z-index: 100;
+    width: 100%;
+    height: 76px;
+    position: fixed;
+    background-color: rgb(51, 19, 19);
+    box-shadow: 0 4px 5px -5px black;
+}
+
+#logo{
+    float: left;
+    width: 110px;
+    z-index: 1000;
+    margin-left: 5px;
+}
+
+ul#menu{
+	float:right;
+}
+
+li{
+    background-color: rgb(51, 19, 19);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+li:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in; 
+    -o-transition: 0.1s ease-in; 
+    -webkit-transition: 0.1s ease-in;
+}
+
+a.scroll{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+a.scroll:hover{ 
+	color: rgba(0, 150, 0, 1);
+}    
+
+/* Blocos Gerais */
+    
+.area {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Primeiro block */
+
+#home{
+    height: 100%;
+}
+.imgcarousel{
+    height: 100vh;
+}
+.ahome{
+    text-decoration: none;
+    color: white;
+}
+.ahome:hover{
+    color: rgba(0, 150, 0, 1);
+    text-decoration: none;
+}
+
+/* Segundo Bloco */
+
+#historia{
+    background-color:yellowgreen;
+}
+
+#sectionhistoriaimg{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    float: left;
+}
+.imghistoria{
+    position: relative;
+    width: 45vw;
+}
+
+.sesctioncontent{
+    padding-right: 5vw;
+    padding-bottom: 10vh;
+}
+.sectionhistoria{
+    position: relative;
+    width: 45vw;
+    margin-top: 5vh;
+}
+    
+/* Terceiro block */
+.acard{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.acard:hover{
+    color: rgba(0, 150, 0, 1);
+    text-decoration: none;
+}
+    
+/* Quarto block */
+
+.areacontato{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 520px;
+}
+#contato{
+    background-color: yellowgreen;
+}
+
+svg.bi {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    fill:currentColor;
+}
+    
+svg#email{
+    top: 11px;
+    left: 25px;
+    float: left;
+    }
+
+svg#mapa{
+    top: 20px;
+    float: left; 
+    margin-bottom: 30px;   
+    }
+
+a.link{
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    text-decoration:none;
+}
+
+a.link:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in; 
+    -o-transition: 0.1s ease-in; 
+    -webkit-transition: 0.1s ease-in;
+     color: white;
+}
+
+a#mail{
+    float: left;
+    position: relative;
+    top: 16px;
+    left: 35px;
+}
+
+a#mapa{
+    float: left;
+    position: relative;
+    top: 25;
+    left: 10px;
+    margin-bottom: 100px;
+}
+
+
+/* Estilo do icone flutuante do facebook */
+
+img#social{
+    z-index: 1000;
+    width: 40px;
+    animation: pulso 2s infinite;
+    position: fixed;
+    top: 90%;
+    right: 3%;
+}
+      
+@keyframes pulso{
+    0%{
+        transform: scale(0.9);
+    }
+      
+    50%{
+        transform: scale(1.1);
+    }
+      
+    100%{
+        transform: scale(0.9);
+    }
+}
